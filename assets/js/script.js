@@ -33,3 +33,30 @@ $(document).ready(function(){
     checkitem();
 });
 
+
+/*---------------------------------------------------------------------about----*/
+
+document.querySelector('#about-button').addEventListener('click', toggle)
+
+function toggle(event) {
+    if (document.getElementById('about').style.display == 'none') {
+    event.target.innerText = 'About'
+    document.getElementById('about').style.display = ''
+  } else {
+    event.target.innerText = 'About'
+    document.getElementById('about').style.display = 'none'
+  }
+}
+
+/*--------------------------------------------------Fullscreen--*/
+
+var elem = document.getElementById("myCarousel");
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}

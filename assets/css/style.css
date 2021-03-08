@@ -2,17 +2,37 @@
 
 /*--------------------------------------------------------------header--*/
 
+.header-bar {
+    min-height: 120px;
+    background-color: #304255;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
 .title {
     font-family: 'Mountains of Christmas', sans-serif;
     text-align: center;
+    margin-top: 15px;
     font-weight: 700;
+    font-size: 46px;
+    color: #d4d7da;
+}
+
+.subtitle {
+    font-family: 'Mountains of Christmas', sans-serif;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 26px;
+    color: #d4d7da;
 }
 
 /*--------------------------------------------------------------body--*/
 
 .bg-color {
     background-color: aliceblue;
-    height: calc(100vh - 60px);
+    height: 100%;
 }
 
 /*--------------------------------------------------------------carousel--*/
@@ -24,14 +44,14 @@
   margin-left: 40px;
   margin-right: 40px;
   text-align: center;
-  
+  padding-bottom: 60px;
 }
 
-.carousel-control.left, .carousel-control.right {
+/*.carousel-control.left, .carousel-control.right {
    background-image:none !important;
    filter:none !important;
    position: center;
-}
+}*/
 
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
         display: block;
@@ -44,6 +64,14 @@
 
 .carousel-indicators li { visibility: hidden; }
 
+.carousel-caption{
+    color: #304255;
+    background-color: rgb(212,215,218,0.2);
+    top: 0;
+    bottom: auto;
+    border-radius: 25px;
+}
+
 .item img{
     width: 100%;
     max-height: 600px;
@@ -52,6 +80,10 @@
 }
 
 /*--------------------------------------------------------------team--*/
+
+.team {
+    padding-bottom: 60px;
+}
 
 .team h2{
     font-family: 'Mountains of Christmas', sans-serif;
@@ -89,6 +121,7 @@
 
 .my-footer {
     background-color: #d4d7da;
+    color: #304255;
     font-family: "Inter", sans-serif;
     min-height: 60px;
     margin: 0;
@@ -96,6 +129,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    position: fixed;
 }
 
 .column {
