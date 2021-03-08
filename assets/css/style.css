@@ -1,1 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Mountains+of+Christmas:wght@400;700&display=swap');
+
+/*--------------------------------------------------------------header--*/
+
+.title {
+    font-family: 'Mountains of Christmas', sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------body--*/
+
+
+
+.bg-color {
+    background-color: aliceblue;
+    height: calc(100vh - 60px);
+}
+
+/*--------------------------------------------------------------carousel--*/
+
+.carousel {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  
+}
+
+.carousel-control.left, .carousel-control.right {
+   background-image:none !important;
+   filter:none !important;
+   position: center;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        max-width: 100%;
+        line-height: 1;
+        margin:auto;
+        width: 100%;
+        }
+
+.carousel-indicators li { visibility: hidden; }
+
+.item img{
+    width: 100%;
+    max-height: 600px;
+    max-width: 800px;
+    position: relative;
+}
+
+/*--------------------------------------------------------------team--*/
+
+.team h2{
+    font-family: 'Mountains of Christmas', sans-serif;
+    font-weight: 300;
+    text-align: center; 
+}
+
+.team h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+}
+
+.doodle {
+    width: 250px;
+    height: 250px;
+    padding: 0;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------contact--*/
+
+.center-form {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+    height: 100%;
+    position: relative;
+}
+
+/*--------------------------------------------------------------footer--*/
+
+.my-footer {
+    background-color: #d4d7da;
+    font-family: "Inter", sans-serif;
+    min-height: 60px;
+    margin: 0;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.column {
+    width: 50%;
+    float: left;
+}
+
+.column p {
+    text-align: justify;
+    margin: 1em;
+}
+
+.footer-element {
+    line-height: 17px;
+}
+
+.footer-element a {
+    font-size: 20px;
+}
