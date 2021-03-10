@@ -1,19 +1,7 @@
-$(document).ready(function(){
- 
+/*-------------------------------------------------Carousel---*/
 
-  $(".item1").click(function(){
-    $("#myCarousel").carousel(0);
-  });
-  $(".item2").click(function(){
-    $("#myCarousel").carousel(1);
-  });
-  $(".item3").click(function(){
-    $("#myCarousel").carousel(2);
-  });
-  $(".item4").click(function(){
-    $("#myCarousel").carousel(3);
-  });
-        
+$(document).ready(function(){
+      
   $("#myCarousel").carousel({wrap: false});
 
   $(".left").click(function(){
@@ -60,3 +48,11 @@ function openFullscreen() {
     elem.msRequestFullscreen();
   }
 }
+
+/*---------------------------------------------------audio*/
+/*---- A simple audio function that allows the user to click on the chosen image and play an audio file--*/
+/*---- Format for inserting audio into HTML element is - onclick="playAudio('#.mp3')"---*/
+
+function playAudio(url) {
+  new Audio(url).play().volume=.5;
+};
