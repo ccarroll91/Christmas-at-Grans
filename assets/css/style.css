@@ -110,11 +110,19 @@
 
 .center-form {
     padding-top: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     margin: 0 auto;
     max-width: 70%;
     height: 100%;
     position: relative;
+}
+
+.text-center {
+    padding-top: 10px;
+}
+
+form textarea {
+    min-height: 200px;
 }
 
 /*--------------------------------------------------------------footer--*/

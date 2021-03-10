@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("user_5JK1Vn0UFaSc2oSSOYG5T");
+    })();
+    </script>
+    <title>Christmas at Gran's</title>
 </head>
 <body>
-    
+    <header>
+        <!----------------------------------------------------main header text, Christmas at Gran's-->
+        <div class="row no-gutters header-bar">
+            <div class="col-12">
+                <div>
+                    <h1 class="title">Christmas at Gran's</h1>
+                    <p class="subtitle">A poem by Michael Brennan</p>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!--------------------------------------------contact form-->
+    <section>
+        <div class="bg-color" style="min-height: calc(100vh-120px);">
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                    <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
+                    <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message to team" required></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit">Send your message :-)</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+<!----------------------------------------------------about the project | contact page-->
+    <footer class="container-fluid my-footer">
+        <div class="row">
+            <div class="column about-btn footer-element">
+                <button id="about-button" title="Click to Show/Hide" onclick="toggle(event);"><h5>About</h5><span class="sr-only">About - click for more information</span></button>
+                <div class="footer-child" id="about" style="display:none">
+                        <p>Christmas at Gran's was written by Michael Brennan at the age of 10, and adapted into this digital story by Conor Carroll. It is with deep regret that Conor discovered that Bonzo 
+                        did not, in fact, exist, and was a figment of Brennan's imagination for the sake of the poem. As Michael's brother Tom put it, he took "a bit of creative licence there". We hope that 
+                        you love him all the same.
+                        </p>
+                        <span class="sr-only">Christmas at Gran's was written by Michael Brennan at the age of 10, and adapted into this digital story by Conor Carroll. It is with deep regret that Conor discovered that Bonzo 
+                        did not, in fact, exist, and was a figment of Brennan's imagination for the sake of the poem. As Michael's brother Tom put it, he took "a bit of creative licence there". We hope that 
+                        you love him all the same.</span>
+                </div>
+            </div>
+            <div class="column contact-btn footer-element">
+                <a href="contact.html" target="_blank"><h5>Want to get in touch?</h5></a>
+            </div>        
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ccfb617d95.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script-contact.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
