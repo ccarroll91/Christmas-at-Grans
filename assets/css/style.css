@@ -93,6 +93,10 @@
     font-weight: 900;
 }
 
+.button-center {
+    text-align: center;
+}
+
 .fullscreenbtn {    
   background-color: #304255;
   font-family: 'Mountains of Christmas', sans-serif;;
@@ -164,16 +168,24 @@
 /*--------------------------------------------------------------team--*/
 
 .team {
-    padding-bottom: 60px;
+    padding-bottom: 6opx;
+    padding: 20px;
+    text-align: center;
 }
 
-.team h2{
+.team-header{
     font-family: 'Mountains of Christmas', sans-serif;
     font-weight: 300;
     text-align: center; 
 }
 
 .team h4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.team p {
+    text-align: justify;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
 }
@@ -207,7 +219,19 @@ form textarea {
     min-height: 200px;
 }
 
+.submit-button {
+  background-color: #304255;
+  font-family: 'Mountains of Christmas', sans-serif;;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: hidden;
+  border-radius: 15px;
+}
+
 /*--------------------------------------------------------------footer--*/
+
+
 
 .my-footer {
     background-color: #d4d7da;
