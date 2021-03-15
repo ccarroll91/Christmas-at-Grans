@@ -17,11 +17,28 @@
                     <h1 class="title">Christmas at Gran's</h1>
                     <p class="subtitle">A poem by Michael Brennan</p>
                 </div>
+                <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Contents</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="index.html">Home</a>
+                                <a href="contact.html">Contact</a>
+                            </div>
+                        </div>
             </div>
         </div>
     </header>
     <section class="container-fluid bg-color" style="min-height: calc(100vh-120px);">
-        <div id="myCarousel" class="carousel slide lazy" data-interval="false">
+        <div class="intro">
+            <p><strong>Welcome</strong> to the mind of Michael Brennan. On this page you'll find a poem written
+            by Michael entitled <span class="title-body">Christmas at Gran's</span>.</p>
+            <p>When reading through the story, click on the slide to hear the narration. Don't worry about play/pause controls, 
+                or even built in audio controls. The sound bytes are a mere 2 seconds each, and the volume is preset to 50%, so you only need 
+                to worry about the volume of your device.
+            </p>
+            <p>To go <strong>full screen</strong> click the <i class="fas fa-expand-arrows-alt"></i> icon below.</p>
+            <p>So sit back, relax, and enjoy.</p>
+        </div>
+            <div id="myCarousel" class="carousel slide lazy" data-interval="false">
                     <div class="carousel-inner" >
                         <div class="item active" id="image1">
                             <img src="assets/images/titleplaceholder.png" alt="description of image" type="button" onclick="playAudio('assets/audio/audio1.mp3')">
@@ -214,7 +231,8 @@
                                 </a>
                     </div>
                 </div>
-                    <button onclick="openFullscreen();">Open in Fullscreen Mode</button>
+                
+                    <button class="fullscreenbtn" onclick="openFullscreen();"><i class="fas fa-expand-arrows-alt fsicon" alt="Go full screen"></i><span class="sr-only">Click to go full screen</span></button>
                     <!----style button or replace with icon-->
                 
             <!----------------------------------------------------right, about the team column, 4/12-->
@@ -245,9 +263,6 @@
                         did not, in fact, exist, and was a figment of Brennan's imagination for the sake of the poem. As Michael's brother Tom put it, he took "a bit of creative licence there". We hope that 
                         you love him all the same.</span>
                 </div>
-            </div>
-            <div class="column contact-btn footer-element">
-                <a href="contact.html" target="_blank"><h5>Want to get in touch?</h5></a>
             </div>        
         </div>
     </footer>
