@@ -258,12 +258,20 @@ form textarea {
     line-height: 17px;
 }
 
-#about-button {
+#about-div {
   background-color: #304255;
   font-family: 'Mountains of Christmas', sans-serif;;
-  color: white;
+  color: #f0f8ff;
   padding: 16px;
   font-size: 26px;
   border: hidden;
   width: 100%;
+}
+
+#about-div h5 {
+  font-family: 'Mountains of Christmas', sans-serif;;
+  color: #f0f8ff;
+  padding: 16px;
+  font-size: 26px;
+  text-decoration: none;
 }
