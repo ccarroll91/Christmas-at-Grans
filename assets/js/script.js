@@ -86,3 +86,10 @@ function toggle(event) {
     document.getElementById('about').style.display = 'none'
   }
 }
+
+/*---------------------------------------------------audio*/
+/*---- A simple audio function that allows the user to click on the chosen image and play an audio file--*/
+/*---- Format for inserting audio into HTML element is - onclick="playAudio('#.mp3')"---*/
+function playAudio(url) {
+  new Audio(url).play().volume=.5;
+};
