@@ -275,3 +275,36 @@ form textarea {
   font-size: 26px;
   text-decoration: none;
 }
+
+/*--------------------------------------------------------------------media queries--*/
+
+
+@media screen and (max-width: 992px) {
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        line-height: 1;
+        margin:auto;
+        width: 800px;
+        }
+.item img{
+    height: auto;
+    width: 800px;
+    position: relative;
+}
+}
+
+@media screen and (max-width: 600px) {
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+        display: block;
+        height: auto;
+        line-height: 1;
+        margin:auto;
+        width: 400px;
+        }
+.item img{
+    height: auto;
+    width: 300px;
+    position: relative;
+}
+}
