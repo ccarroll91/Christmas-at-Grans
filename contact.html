@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/integration
@@ -39,7 +40,7 @@
             <div class="center-form">
                 <h2 class="team-header">Want to say "hello"?</h2>
                     <div class="form">
-                        <form onsubmit="return sendMail(this);">
+                        <form name="contactForm" onsubmit="return sendMail(this);">
                             <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
                             <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
                             <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message to team" required></textarea>
