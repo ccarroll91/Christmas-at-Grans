@@ -37,16 +37,19 @@
     <section>
         <div class="bg-color" style="min-height: calc(100vh-120px);">
             <div class="center-form">
-                <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
-                    <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
-                    <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message to team" required></textarea>
-                    <div class="form-row text-center">
-                        <div class="col">
-                            <button class="submit-button" type="submit">Send your message <i class="fas fa-paper-plane"></i></button>
+                <h2 class="team-header">Want to say "hello"?</h2>
+                    <div class="form">
+                        <form onsubmit="return sendMail(this);">
+                            <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required/>
+                            <input type="email" name="emailaddress" id="emailaddress" class="form-control" placeholder="Email" required/>
+                            <textarea rows="5" name="message" id="message" class="form-control" placeholder="Message to team" required></textarea>
+                            <div class="form-row text-center">
+                                <div class="col">
+                                    <button class="submit-button" type="submit">Send your message <i class="fas fa-paper-plane"></i></button>
+                                </div>
+                                </div>
+                            </form>
                         </div>
-                    </div>
-                </form>
             </div>
         </div>
     </section>
