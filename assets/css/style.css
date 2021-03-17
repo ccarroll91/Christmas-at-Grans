@@ -95,6 +95,7 @@
 
 .button-center {
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .fullscreenbtn {    
@@ -144,7 +145,7 @@
         height: auto;
         line-height: 1;
         margin:auto;
-        width: 1200px;
+        width: 1000px;
         }
 
 .carousel-indicators li { visibility: hidden; }
@@ -159,7 +160,7 @@
 
 .item img{
     height: auto;
-    width: 1200px;
+    width: 1000px;
     position: relative;
 }
 
@@ -294,7 +295,7 @@ form textarea {
         width: 800px;
         }
 .item img{
-    height: auto;
+    height: 600px;
     width: 800px;
     position: relative;
 }
@@ -309,8 +310,9 @@ form textarea {
         width: 400px;
         }
 .item img{
-    height: auto;
-    width: 300px;
+    height: 300px;
+    width: 400px;
     position: relative;
 }
 }
+
