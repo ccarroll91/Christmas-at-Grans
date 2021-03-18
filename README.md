@@ -1,3 +1,6 @@
+![website mockup](assets/readme/WebsiteMockup.png)
+
+
 # Christmas at Gran's
 
 "Christmas at Gran's" is a poem written by Michael Brennan at the age of ten. Due to the Covid-19 pandemic, 
@@ -27,7 +30,6 @@ to all audiences.
 3. [**Technologies Used**](#technologies-used)
 
 4. [**Testing**](#testing)
-    - [**Testing documentation can be found here in a seperate file**](TESTING.md)
 
 5. [**Deployment**](#deployment)
 
@@ -76,7 +78,7 @@ message to the team, before clicking on a styled "submit" button.
 
 The initial wireframe
 
-![initial wireframe](assets/readme/)
+![initial wireframe](assets/readme/wf.png)
 
 ### Surface
 
@@ -88,17 +90,24 @@ a darker blue for the header and footer create a contrast that remains soft to l
 Colours used on the site are (without titles):
 
 - #304255 : A greyish dark blue used for the header and footer, as well as on the buttons.
+
+![Header Colours](assets/readme/header-mat.png)
+
 - #f0f8ff : A lighter blue used for the background colour of the site. It's lightness creates a suitable contrast for black font to appear.
+
+![Body Colours](assets/readme/body-mat.png)
 - #d4d7da : An off-white/blue that is used for the header/footer/button fonts. It creates a softness while still being legible.
+
 - #253241 : A darker for mof the header, used as a hover for the dropdown menu and the intro font.
 
 **Icons** used are from fontawesome.com. They are seen on the fullscreen button and the submit button.
 
 **Images** used are all drawn by the author of the site, Conor Carroll. They are in png format, and have been condensed. 
 
-**Audio** used comes from a text-to-speech app "#" 
+**Audio** used comes from a text-to-speech app "Narrator's Voice", available [here](https://play.google.com/store/apps/details?id=br.com.escolhatecnologia.vozdonarrador&hl=en&gl=US) on the Google Play Store.  
 
-![screenshot of app](assets/readme/)
+![Narrator's voice app](assets/readme/nv1.jpg)
+![Narrator's voice app](assets/readme/nv2.jpg)
 
 **Fonts** :
 
@@ -160,6 +169,91 @@ The site is built up of two pages
 ---
 ## Testing
 
+Testing was carried out throughout the build process of the site.
+
+### Lighthouse - Google Chrome Developer Tools
+
+- [lighthouse](https://developers.google.com/web/tools/lighthouse) report in Chrome devtools and on command line.
+
+![Chrome Lighthouse Mobile - Incognito mode](assets/readme/lh1.png)
+
+![Chrome Lighthouse Desktop - Incognito mode](assets/readme/lh2.png)
+
+The initial tests resulted in quite a poor performance score due to the amount of information presented on 
+the Index page. The 'Team' section required additional loading, images, and increased the page length.
+
+It was due to this score that the Team page was created, in order to improve the overall performance of the site 
+and prevent frustration from users.
+
+### Bugs encountered
+
+1. The About button failed to fire when another button existed on the page. It is unclear to me why 
+the Javascript could not activate the button based on the id, as in my code, but the result was changing the 
+button to clickable div element.
+2. The requestFullscreen function would not launch while the button to signal the command was inside the carousel div.
+This was a simple fix, but it does compromise the look of the page.
+3. Image scaling was an issue. The images were created in a 4:3 ratio, and my initial CSS stretched the images accorss the 
+screen. When in fullscreen, the images would stretch appear beyond the border of the page, making it imposible to see.
+4. Audio controls: I wanted the audio to be a simple "click next slide, hear the audio". However, due to Chrome and most modern browsers 
+blocking any autoplay feature, this was not working. The code required would have been exhaustive. I instead opted 
+for a much safer, user friendly approach of a preset volume of 50%, and a click-to-play feature on the images. This 
+removed the need for controls, as the audio bytes are minimal in length, and ensured that a user with sensory 
+issues would not be bombarded with loud or unexpected audio.
+
+### Known issues
+
+1. When in fullscreen, the images do not take up the entirety of the screen, and sit at the top of the page, with a black surround.
+On odd shaped screens the images do not appear correctly.
+2. The About div can be tempermental about it's initial launch, especially on the Contact page, despite the same code being used.
+I felt it was better to have the feature running, even poorly, than not at all, for the sake of the hidden disclaimer about the dog in the story. 
+As this is a poem for children and by the author as a child, the humour was deemed esential. 
+
+### Version control
+
+In truth, this site was rebuild. My initial site build was muddled with broken code, and destroyed. While testing features 
+that wouldn't launch, I used a separate repository, although I am now aware that I should have been branching the site 
+and merging on Github. This is a lesson learned. The test repository can be found [here](https://github.com/ccarroll91/game-test).
+
+### Functionality testing
+
+- Navbar: Links between the three pages work successfully
+
+- Fullscreen: The fullscreen button works, although outside of the div
+
+- Carousel: The carousel works, with functional glyphs, as expected from the Bootstrap plugin
+
+- Audio: The audio works on each slide
+
+- About: The about section requires the user to click on the lower half of the div, before changing size 
+on a second click.
+
+- Email: The emailjs function has been tested and works adequetely, although the message and user data remains in the box when submitted
+
+## User stories
+
+
+1. As a visitor to the site, I want to read a poem about a traditional family Christmas.
+
+*The user can read the story with ease*
+
+2. As a visitor to the site, I want full accessibility and array of methods to enjoy the story.
+
+*The user has both audio and visual methods of enjoying the story, and has the option of screen reader compatibility*
+
+3. As a visitor to the site, I want to be able to contact the creators of the story and the site for a variety of reasons.
+
+*There is a functional contact page on the site to do so*
+
+##### Owner goals
+
+4. As the owner of the site, I want to tell a fun story on behalf of a close friend - the world can never have too many stories.
+
+*I have told the story, although the artwork was not finished at the time of the launch*
+
+5. As the owner of the site, I want to promote my work, both in visual storytelling and in site development.
+
+*Some of my visual work was displayed nicely, but the art is not finished. The site functions 
+to a satisfactory level*
 
 
 ##### back to [contents](#table-of-contents)
