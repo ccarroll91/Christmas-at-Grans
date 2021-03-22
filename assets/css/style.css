@@ -45,7 +45,7 @@
 }
 
 .dropdown {
-  position: center;
+  
   display: block;
   
 }
@@ -167,7 +167,7 @@
 /*--------------------------------------------------------------team--*/
 
 .team {
-    padding-bottom: 6opx;
+    padding-bottom: 60px;
     padding: 20px;
     text-align: center;
 }
