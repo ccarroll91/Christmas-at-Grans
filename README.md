@@ -235,14 +235,17 @@ on a second click.
 1. As a visitor to the site, I want to read a poem about a traditional family Christmas.
 
 *The user can read the story with ease*
+![initial wireframe](assets/readme/carousel.png)
+![initial wireframe](assets/readme/poem.png)
 
 2. As a visitor to the site, I want full accessibility and array of methods to enjoy the story.
 
-*The user has both audio and visual methods of enjoying the story, and has the option of screen reader compatibility*
+*The user has both audio and visual methods of enjoying the story, and has the option of screen reader compatibility and a downloadable version as seen above*
 
 3. As a visitor to the site, I want to be able to contact the creators of the story and the site for a variety of reasons.
 
 *There is a functional contact page on the site to do so*
+![initial wireframe](assets/readme/form.png)
 
 ##### Owner goals
 
