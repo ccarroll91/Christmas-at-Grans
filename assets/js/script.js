@@ -35,8 +35,6 @@ $(document).ready(function(){
   });
 });
 
-console.log("myCarousel")
-
 $('#myCarousel').on('slid', '');
 $('#myCarousel').on('slid.bs.carousel', '');
 
