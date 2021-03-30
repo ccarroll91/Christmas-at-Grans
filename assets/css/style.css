@@ -231,6 +231,7 @@ form textarea {
 
 
 
+
 .my-footer {
     background-color: #d4d7da;
     color: #304255;
@@ -241,6 +242,27 @@ form textarea {
     bottom: 0;
     left: 0;
     width: 100%;
+    line-height: 7px;
+    position: relative;
+}
+
+.my-footer p {
+    font-family: "Mountains of Christmas", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+.list-inline-item i{
+    font-size: 20px;
+    text-decoration: none;
+    color: #304255;
+}
+
+.list-inline-item i:hover{
+    font-size: 20px;
+    text-decoration: none;
+    color: #f0f8ff;
 }
 
 .column {
