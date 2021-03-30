@@ -209,6 +209,7 @@ issues would not be bombarded with loud or unexpected audio.
 
 1. When in fullscreen, the images do not take up the entirety of the screen, and sit at the top of the page, with a black surround.
 On odd shaped screens the images do not appear correctly.
+2. The quiz aligns to the left and fails to react to attempts to stylise.
 
 
 ### Version control
