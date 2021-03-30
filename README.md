@@ -135,8 +135,8 @@ The site is built up of two pages
 ### Features to Implement
 
 - Finished artwork to remove the need for Captions
-- A functional quiz page to add to the story, in a seperate section
-- A whack-a-mole style game that feeds sprouts to Bonzo 
+- A whack-a-mole style game that feeds sprouts to Bonzo to add a fun element to the page,
+as the project is aimed at children
 
  ##### back to [contents](#table-of-contents)
 
@@ -190,10 +190,15 @@ and prevent frustration from users.
 1. The About button failed to fire when another button existed on the page. It is unclear to me why 
 the Javascript could not activate the button based on the id, as in my code, but the result was changing the 
 button to clickable div element.
+To fix this issue, the About div was removed, and the footer replaced witha more contemporary footer.
+The information was then moved to the Team page, and attached to a Secret button to act as a message from the team.
+
 2. The requestFullscreen function would not launch while the button to signal the command was inside the carousel div.
 This was a simple fix, but it does compromise the look of the page.
+
 3. Image scaling was an issue. The images were created in a 4:3 ratio, and my initial CSS stretched the images accorss the 
 screen. When in fullscreen, the images would stretch appear beyond the border of the page, making it imposible to see.
+
 4. Audio controls: I wanted the audio to be a simple "click next slide, hear the audio". However, due to Chrome and most modern browsers 
 blocking any autoplay feature, this was not working. The code required would have been exhaustive. I instead opted 
 for a much safer, user friendly approach of a preset volume of 50%, and a click-to-play feature on the images. This 
@@ -204,9 +209,7 @@ issues would not be bombarded with loud or unexpected audio.
 
 1. When in fullscreen, the images do not take up the entirety of the screen, and sit at the top of the page, with a black surround.
 On odd shaped screens the images do not appear correctly.
-2. The About div can be tempermental about it's initial launch, especially on the Contact page, despite the same code being used.
-I felt it was better to have the feature running, even poorly, than not at all, for the sake of the hidden disclaimer about the dog in the story. 
-As this is a poem for children and by the author as a child, the humour was deemed esential. 
+
 
 ### Version control
 
@@ -267,11 +270,27 @@ to a satisfactory level*
 The site was deployed on Github with the use of a use of a Github account, and built 
 usig Gitpod.
  For instructions on how to:
- 1. Clone, find detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
- 2. Fork, find detailed instructions available [here](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo)
- 
- This will provide you with the opportunity to use the code that assembled this site.
+ 1. Clone:
+ - On GitHub, navigate to the main page of the repository.
+ - Above the list of files, click  the "down-arrow" and Code button, in green.
+ - To clone the repository using HTTPS, under "Clone with HTTPS", click the clipboard icon. 
+ To clone a repository using GitHub CLI, click Use GitHub CLI, then click the clipboard icon.
+ - Open Git Bash.
+ - Change the current working directory to the location where you want the cloned directory.
+ - Type git clone, and then paste the URL you copied earlier.
+ - $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+ - Press Enter to create your local clone.
 
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `Spoon-Knife`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+
+ 2. Fork:
+ - On GitHub, navigate to the Christmas at Gran's repository.
+ - In the top-right corner of the page, click Fork.
  ##### back to [contents](#table-of-contents)  
 
 ---
@@ -280,7 +299,7 @@ usig Gitpod.
 ### Content
 
 The poem was written by Michael Brennan at the age of ten. All other content on the 
-site came at the hands of Conor Carroll
+site came at the hands of Conor Carroll.
 
 ### Resources
 
