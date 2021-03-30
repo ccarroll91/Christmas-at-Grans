@@ -99,6 +99,6 @@ function generateQuiz(questions, quiz, results, submitButton){
   showQuestions(questions, quiz);
   submitButton.onclick = function(){
     showResults(questions, quiz, results);
-  }
+  };
 
 }

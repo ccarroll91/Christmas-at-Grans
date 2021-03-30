@@ -15,17 +15,13 @@ window.onclick = function(event) {
       }
     }
   }
-}
+};
 
 /*----------------------------------------------------------------carousel--*/
 
 $(document).ready(function(){
  
-  $("#myCarousel").carousel({wrap: false});
-    
- 
-
-    
+  $("#myCarousel").carousel({wrap: false});  
   
   $(".left").click(function(){
     $("#myCarousel").carousel("prev");
@@ -72,16 +68,16 @@ function openFullscreen() {
 
 /*----------------------------------------------------------------about--*/
 
-document.querySelector('#secret-btn').addEventListener('click', toggle)
+document.querySelector('#secret-btn').addEventListener('click', toggle);
 
 function toggle(event) {
     if (document.getElementById('secret').style.display == 'none') {
     event.target.innerText = 
-    `Want to know a secret?`
-    document.getElementById('secret').style.display = ''
+    `Want to know a secret?`;
+    document.getElementById('secret').style.display = '';
   } else {
-    event.target.innerText = 'Want to know a secret?'
-    document.getElementById('secret').style.display = 'none'
+    event.target.innerText = 'Want to know a secret?';
+    document.getElementById('secret').style.display = 'none';
   }
 }
 
@@ -89,5 +85,5 @@ function toggle(event) {
 /*---- A simple audio function that allows the user to click on the chosen image and play an audio file--*/
 /*---- Format for inserting audio into HTML element is - onclick="playAudio('#.mp3')"---*/
 function playAudio(url) {
-  new Audio(url).play().volume=.5;
-};
+  new Audio(url).play().volume='.5';
+}
