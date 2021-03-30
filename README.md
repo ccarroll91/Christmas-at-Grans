@@ -210,6 +210,7 @@ issues would not be bombarded with loud or unexpected audio.
 1. When in fullscreen, the images do not take up the entirety of the screen, and sit at the top of the page, with a black surround.
 On odd shaped screens the images do not appear correctly.
 2. The quiz aligns to the left and fails to react to attempts to stylise.
+3. Arrows remain in first and last slides that shoud not be there, which may cause some confusion
 
 
 ### Version control
@@ -228,8 +229,7 @@ and merging on Github. This is a lesson learned. The test repository can be foun
 
 - Audio: The audio works on each slide
 
-- About: The about section requires the user to click on the lower half of the div, before changing size 
-on a second click.
+- Secret: The user can click on a button in the team page, revealing a secret about the story.
 
 - Email: The emailjs function has been tested and works adequetely, although the message and user data remains in the box when submitted
 
