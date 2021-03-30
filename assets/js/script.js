@@ -74,16 +74,16 @@ function openFullscreen() {
 
 /*----------------------------------------------------------------about--*/
 
-document.querySelector('#about-div').addEventListener('click', toggle)
+document.querySelector('#secret-btn').addEventListener('click', toggle)
 
 function toggle(event) {
-    if (document.getElementById('about').style.display == 'none') {
+    if (document.getElementById('secret').style.display == 'none') {
     event.target.innerText = 
-    `About`
-    document.getElementById('about').style.display = ''
+    `Want to know a secret?`
+    document.getElementById('secret').style.display = ''
   } else {
-    event.target.innerText = 'About'
-    document.getElementById('about').style.display = 'none'
+    event.target.innerText = 'Want to know a secret?'
+    document.getElementById('secret').style.display = 'none'
   }
 }
 
