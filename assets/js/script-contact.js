@@ -7,9 +7,15 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
+            alert("Thanks for getting in touch <3");
         },
         function(error) {
             console.log("FAILED", error);
         });
         return false;
 }
+
+document.addEventListener("submit", function(event) {
+  event.preventDefault()
+  event.target.reset()
+})
