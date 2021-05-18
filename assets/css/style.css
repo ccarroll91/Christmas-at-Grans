@@ -112,6 +112,20 @@
   position: relative;
 }
 
+.secretbtn {    
+  background-color: #304255;
+  font-family: 'Mountains of Christmas', sans-serif;;
+  color: white;
+  margin-top: 10px;
+  padding: 16px;
+  border: hidden;
+  width: 170px;
+  height: 70px;
+  transform: 50%;
+  border-radius: 5px;
+  position: relative;
+}
+
 .fsicon {
     font-size: 20px;
     position: absolute;
